@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Área y Perímetro del Cuadrado</title>
+</head>
+<body>
+    <h2>Calcular Área y Perímetro de un cuadrado</h2>
+
+    <form method="POST">
+        <label for="lado">Medida del lado:</label>
+        <input type="number" step="any" name="lado" required>
+        <button type="submit">Calcular</button>
+    </form>
+
+    {% if area is not none %}
+        <h3>Resultados:</h3>
+        <p><strong>Área:</strong> {{ area }}</p>
+        <p><strong>Perímetro:</strong> {{ perimetro }}</p>
+    {% endif %}
+</body>
+</html>
